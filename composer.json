@@ -45,6 +45,16 @@
         "phpcs-fix": "phpcbf",
         "phpcs-report": "phpcs > phpcs.result"
     },
+    "scripts-descriptions": {
+        "php-version": "Show php version",
+        "test": "Run phpunit tests configuration phpunit.xml",
+        "test-coverage": "Run phpunit tests with coverage",
+        "testdox" : "Run phpunit tests with testdox and colors",
+        "phpcs": "Run phpcs against /src",
+        "phpcs-colors": "Run phpcs with colors",
+        "phpcs-fix": "Run phpcbf against /src to check for fixes",
+        "phpcs-report": "Run phpcs and save result to phpcs.result"
+    },
     "require": {
         "php": ">=8.1"
     },
