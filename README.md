@@ -17,7 +17,7 @@ The boilerplate also includes phpunit and PHP_CodeSniffer for testing and code q
 - [License](https://choosealicense.com/licenses/) Is set to MIT
 
 ## Installation
-
+- Using composer create-project:
 ```bash
 composer create-project siktec/composer-starter-pack
 # Edit composer.json and README.md to fit your needs
@@ -26,6 +26,11 @@ composer install
 composer test
 # Good to start coding
 ```
+- Using git:
+```bash
+git clone https://github.com/siktec-lab/composer-starter-pack <project-name>
+```
+- Using Github template: `Click on 'Use this template' and follow the instructions`
 
 ## Composer Scripts
 - `composer test` Runs phpunit tests from the tests folder with the phpunit.xml config file
