@@ -3,11 +3,11 @@
 local/*
 !local/.keepin
 
-.vscode/
+/.vscode/
 *.code-workspace
 
 # PHP ignores
-vendor/
+/vendor/
 composer.lock
 composer.phar
 .env
