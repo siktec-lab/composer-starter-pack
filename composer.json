@@ -1,0 +1,56 @@
+{
+    "name": "siktec/composer-starter-pack",
+    "description": "This is a starter pack for a composer package with (phpunit, phpcs, actions ....)",
+    "license": "MIT",
+    "keywords": [
+        "composer", "starter", "package", "phpunit", "phpcs", "actions"
+    ],
+    "support": {
+        "issues": "https://github.com/siktec-lab/composer-starter-pack/issues"
+    },
+    "type": "project",
+    "config": {
+        "platform": {
+            "php": "8.1.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "authors": [
+        {
+            "name": "Shlomo Hassid",
+            "email": "siktec.lab@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Project\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Project\\Tests\\": "tests/"
+        }
+    },
+    "scripts" : {
+        "php-version": "php -v",
+        "test": "phpunit --configuration phpunit.xml",
+        "test-coverage": "phpunit --configuration phpunit.xml --coverage-html coverage",
+        "testdox" : "phpunit --configuration phpunit.xml --testdox --colors=always",
+        "phpcs": "phpcs",
+        "phpcs-colors": "phpcs --colors",
+        "phpcs-fix": "phpcbf",
+        "phpcs-report": "phpcs > phpcs.result"
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3",
+        "slevomat/coding-standard": "^8.13",
+        "squizlabs/php_codesniffer": "^3.7"
+    }
+}

@@ -15,11 +15,20 @@ The boilerplate also includes phpunit and PHP_CodeSniffer for testing and code q
 ## Installation
 
 ```bash
-composer create-project --prefer-dist jeroen-g/composer-starter-pack my-package
+composer create-project siktec/composer-starter-pack
+# Edit composer.json and README.md to fit your needs
+composer install
+# Run tests
+composer test
+# Good to start coding
 ```
 
 ## Composer Scripts
-- ```composer test``` Runs phpunit tests that are located in the tests folder and have the suffix Test.php
-- ```composer cs``` Runs phpcs on the src folder
-- ```composer cs-fix``` Runs phpcbf on the src folder
-- ```composer cs-fix-dry``` Runs phpcbf in dry mode on the src folder
+- `composer test` Runs phpunit tests from the tests folder with the phpunit.xml config file
+- `composer test-coverage` Runs phpunit tests from the tests folder with the phpunit.xml config file and generates a coverage report in the coverage folder
+- `composer testdox` Same as `composer test` but with a more readable output and colors
+- `composer phpcs` Runs phpcs with the config phpcs.xml
+- `composer phpcs-colors` Same as `composer phpcs` but with colors
+- `composer phpcs-fix` Runs phpcbf to fix code style
+- `composer phpcs-report` Runs phpcs and saves the result in phpcs.result
+

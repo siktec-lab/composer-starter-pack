@@ -1,0 +1,25 @@
+
+#exclude all files in tthe local folder except the .keepin file
+local/*
+!local/.keepin
+
+.vscode/
+*.code-workspace
+
+# PHP ignores
+vendor/
+composer.lock
+composer.phar
+.env
+
+# Docker ignores
+docker-compose.override.yml
+.env
+
+# phpunit caches
+.phpunit.result.cache
+.phpunit.cache
+
+# php-cs
+.php_cs.cache
+phpcs.result
