@@ -9,32 +9,32 @@ use Project\Example;
 
 final class FirstTest extends TestCase
 {
-    public static function setUpBeforeClass(): void
+    public function setUp() : void
     {
         return;
     }
 
-    public static function tearDownAfterClass(): void
+    public function tearDown() : void
     {
         return;
     }
 
-    public function setUp(): void
-    {
-        return;
-    }
-
-    public function tearDown(): void
-    {
-        return;
-    }
-
-    public function testSimpleExample(): void
+    public function testSimpleExample() : void
     {
         $example = new Example("you");
         $this->assertEquals(
             "Hello, you",
             $example->hello()
         );
+    }
+
+    public static function setUpBeforeClass() : void
+    {
+        return;
+    }
+
+    public static function tearDownAfterClass() : void
+    {
+        return;
     }
 }
