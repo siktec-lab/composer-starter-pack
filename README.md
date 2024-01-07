@@ -1,5 +1,7 @@
 # Composer Starter Pack
 
+[![Build Status](https://github.com/siktec-lab/composer-starter-pack/actions/workflows/validate_test.yml/badge.svg?branch=main)](https://github.com/siktec-lab/composer-starter-pack/actions/workflows/validate_test.yml)
+
 This is a starter pack for a composer package. It includes a composer.json file with some basic settings and a README.md file with some basic information about the package.
 The boilerplate also includes phpunit and PHP_CodeSniffer for testing and code quality.
 
